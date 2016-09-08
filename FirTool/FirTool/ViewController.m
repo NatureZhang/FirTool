@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NetWorkTask.h"
+
 
 @interface ViewController ()
 
@@ -16,12 +18,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NetWorkTask *task = [NetWorkTask shareNetWorkTask];
+    
+    NSDictionary *param = @{@"api_token":@"cafe568efb1cd4bcc03afb7f9bc11913"};
+    [task netWorkGET:@"http://api.fir.im/apps" parameters:param progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        NSLog(@"%@", responseObject);
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="92" id="WeF-ha-3h3" customClass="AppListCell">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WeF-ha-3h3" id="bli-GQ-IKh">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yo6-Dg-L26">
+                        <rect key="frame" x="16" y="15" width="63" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="63" id="Q9c-Lv-hFo"/>
+                            <constraint firstAttribute="height" constant="62" id="zZT-fx-T60"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bundleId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLm-3S-Hrf">
+                        <rect key="frame" x="106" y="35" width="67" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.68152470085859562" green="0.63905572004063471" blue="0.68209134615384615" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="createTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcC-If-Pxs">
+                        <rect key="frame" x="106" y="63" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.67343750000000002" green="0.67343750000000002" blue="0.67343750000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="appName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0N-YW-0TV">
+                        <rect key="frame" x="106" y="8" width="74" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yo6-Dg-L26" firstAttribute="centerY" secondItem="bli-GQ-IKh" secondAttribute="centerY" id="16o-At-L0V"/>
+                    <constraint firstItem="gcC-If-Pxs" firstAttribute="top" secondItem="yLm-3S-Hrf" secondAttribute="bottom" constant="7" id="2lf-4r-hZ0"/>
+                    <constraint firstItem="gcC-If-Pxs" firstAttribute="leading" secondItem="Yo6-Dg-L26" secondAttribute="trailing" constant="27" id="CIy-K7-sKF"/>
+                    <constraint firstItem="Yo6-Dg-L26" firstAttribute="leading" secondItem="bli-GQ-IKh" secondAttribute="leadingMargin" constant="8" id="GJZ-zR-CjY"/>
+                    <constraint firstAttribute="topMargin" secondItem="v0N-YW-0TV" secondAttribute="top" id="Y3q-K2-CWI"/>
+                    <constraint firstItem="v0N-YW-0TV" firstAttribute="leading" secondItem="Yo6-Dg-L26" secondAttribute="trailing" constant="27" id="cea-Ey-uzz"/>
+                    <constraint firstItem="yLm-3S-Hrf" firstAttribute="leading" secondItem="Yo6-Dg-L26" secondAttribute="trailing" constant="27" id="fFC-qB-SLr"/>
+                    <constraint firstItem="yLm-3S-Hrf" firstAttribute="top" secondItem="v0N-YW-0TV" secondAttribute="bottom" constant="6" id="nbO-xw-sOW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gcC-If-Pxs" secondAttribute="bottom" id="qb1-lO-zhy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="appNameLabel" destination="v0N-YW-0TV" id="5ot-tY-tYc"/>
+                <outlet property="bundleIdLabel" destination="yLm-3S-Hrf" id="GuU-z5-Aty"/>
+                <outlet property="iconImage" destination="Yo6-Dg-L26" id="8zJ-7T-j4A"/>
+                <outlet property="timeLabel" destination="gcC-If-Pxs" id="JAp-ZG-nmM"/>
+            </connections>
+            <point key="canvasLocation" x="275.5" y="193"/>
+        </tableViewCell>
+    </objects>
+</document>

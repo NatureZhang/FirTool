@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		44CE044449CB02445A88B70C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B4E0818FC89BF483D0937 /* libPods.a */; };
+		D94C97051D802BE500FEEB8F /* NetWorkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D94C97041D802BE500FEEB8F /* NetWorkTask.m */; };
+		D9540DFF1D81020A0022CA9C /* AppListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9540DFE1D81020A0022CA9C /* AppListVC.m */; };
+		D9540E061D8102440022CA9C /* AppListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9540E051D8102440022CA9C /* AppListModel.m */; };
+		D9540E0D1D810FB60022CA9C /* AppDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9540E0C1D810FB60022CA9C /* AppDetailVC.m */; };
+		D9540E111D8117380022CA9C /* NSDate+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = D9540E101D8117380022CA9C /* NSDate+Convert.m */; };
+		D9540E141D811B650022CA9C /* AppListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9540E131D811B650022CA9C /* AppListCell.m */; };
+		D9540E161D811B8A0022CA9C /* AppListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9540E151D811B8A0022CA9C /* AppListCell.xib */; };
 		F42EB99F1D78858600766BA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F42EB99E1D78858600766BA1 /* main.m */; };
 		F42EB9A21D78858600766BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F42EB9A11D78858600766BA1 /* AppDelegate.m */; };
 		F42EB9A51D78858600766BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42EB9A41D78858600766BA1 /* ViewController.m */; };
@@ -18,6 +25,19 @@
 
 /* Begin PBXFileReference section */
 		D23059198B2E9172E283F20E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D94C97031D802BE500FEEB8F /* NetWorkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTask.h; sourceTree = "<group>"; };
+		D94C97041D802BE500FEEB8F /* NetWorkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTask.m; sourceTree = "<group>"; };
+		D9540DFD1D81020A0022CA9C /* AppListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListVC.h; sourceTree = "<group>"; };
+		D9540DFE1D81020A0022CA9C /* AppListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListVC.m; sourceTree = "<group>"; };
+		D9540E041D8102440022CA9C /* AppListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListModel.h; sourceTree = "<group>"; };
+		D9540E051D8102440022CA9C /* AppListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListModel.m; sourceTree = "<group>"; };
+		D9540E0B1D810FB60022CA9C /* AppDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDetailVC.h; sourceTree = "<group>"; };
+		D9540E0C1D810FB60022CA9C /* AppDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDetailVC.m; sourceTree = "<group>"; };
+		D9540E0F1D8117380022CA9C /* NSDate+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Convert.h"; sourceTree = "<group>"; };
+		D9540E101D8117380022CA9C /* NSDate+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Convert.m"; sourceTree = "<group>"; };
+		D9540E121D811B650022CA9C /* AppListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListCell.h; sourceTree = "<group>"; };
+		D9540E131D811B650022CA9C /* AppListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListCell.m; sourceTree = "<group>"; };
+		D9540E151D811B8A0022CA9C /* AppListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppListCell.xib; sourceTree = "<group>"; };
 		DA3B4E0818FC89BF483D0937 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0D3358BB8F2EEBB0439249 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F42EB99A1D78858600766BA1 /* FirTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +64,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D94C97021D802BD200FEEB8F /* NetWorkTask */ = {
+			isa = PBXGroup;
+			children = (
+				D94C97031D802BE500FEEB8F /* NetWorkTask.h */,
+				D94C97041D802BE500FEEB8F /* NetWorkTask.m */,
+			);
+			path = NetWorkTask;
+			sourceTree = "<group>";
+		};
+		D9540DFC1D8101A20022CA9C /* AppListVC */ = {
+			isa = PBXGroup;
+			children = (
+				D9540DFD1D81020A0022CA9C /* AppListVC.h */,
+				D9540DFE1D81020A0022CA9C /* AppListVC.m */,
+				D9540E031D8102300022CA9C /* Model */,
+				D9540E001D81021B0022CA9C /* View */,
+			);
+			name = AppListVC;
+			sourceTree = "<group>";
+		};
+		D9540E001D81021B0022CA9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9540E121D811B650022CA9C /* AppListCell.h */,
+				D9540E131D811B650022CA9C /* AppListCell.m */,
+				D9540E151D811B8A0022CA9C /* AppListCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D9540E031D8102300022CA9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9540E041D8102440022CA9C /* AppListModel.h */,
+				D9540E051D8102440022CA9C /* AppListModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D9540E0A1D810F980022CA9C /* AppDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D9540E0B1D810FB60022CA9C /* AppDetailVC.h */,
+				D9540E0C1D810FB60022CA9C /* AppDetailVC.m */,
+			);
+			name = AppDetail;
+			sourceTree = "<group>";
+		};
+		D9540E0E1D8116BC0022CA9C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D9540E0F1D8117380022CA9C /* NSDate+Convert.h */,
+				D9540E101D8117380022CA9C /* NSDate+Convert.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		DA5472229E4A37BDB8C48FB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +163,14 @@
 				F42EB9A11D78858600766BA1 /* AppDelegate.m */,
 				F42EB9A31D78858600766BA1 /* ViewController.h */,
 				F42EB9A41D78858600766BA1 /* ViewController.m */,
+				D9540E0A1D810F980022CA9C /* AppDetail */,
+				D9540DFC1D8101A20022CA9C /* AppListVC */,
 				F42EB9A61D78858600766BA1 /* Main.storyboard */,
 				F42EB9A91D78858600766BA1 /* Assets.xcassets */,
 				F42EB9AB1D78858600766BA1 /* LaunchScreen.storyboard */,
 				F42EB9AE1D78858600766BA1 /* Info.plist */,
+				D9540E0E1D8116BC0022CA9C /* Tool */,
+				D94C97021D802BD200FEEB8F /* NetWorkTask */,
 				F42EB99D1D78858600766BA1 /* Supporting Files */,
 			);
 			path = FirTool;
@@ -137,6 +218,7 @@
 				TargetAttributes = {
 					F42EB9991D78858600766BA1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CUS5A53T99;
 					};
 				};
 			};
@@ -164,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42EB9AD1D78858600766BA1 /* LaunchScreen.storyboard in Resources */,
+				D9540E161D811B8A0022CA9C /* AppListCell.xib in Resources */,
 				F42EB9AA1D78858600766BA1 /* Assets.xcassets in Resources */,
 				F42EB9A81D78858600766BA1 /* Main.storyboard in Resources */,
 			);
@@ -225,7 +308,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42EB9A51D78858600766BA1 /* ViewController.m in Sources */,
+				D9540E141D811B650022CA9C /* AppListCell.m in Sources */,
+				D9540E111D8117380022CA9C /* NSDate+Convert.m in Sources */,
+				D94C97051D802BE500FEEB8F /* NetWorkTask.m in Sources */,
 				F42EB9A21D78858600766BA1 /* AppDelegate.m in Sources */,
+				D9540E061D8102440022CA9C /* AppListModel.m in Sources */,
+				D9540E0D1D810FB60022CA9C /* AppDetailVC.m in Sources */,
+				D9540DFF1D81020A0022CA9C /* AppListVC.m in Sources */,
 				F42EB99F1D78858600766BA1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +358,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Talkweb Information System Co., Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Talkweb Information System Co., Ltd";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -291,6 +381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f872722a-a038-452f-8e7d-0b36236e8bd8";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -312,7 +403,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Talkweb Information System Co., Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Talkweb Information System Co., Ltd";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -327,6 +419,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f872722a-a038-452f-8e7d-0b36236e8bd8";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -337,10 +430,13 @@
 			baseConfigurationReference = D23059198B2E9172E283F20E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FirTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--Nature--.FirTool";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkweb.FirTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f872722a-a038-452f-8e7d-0b36236e8bd8";
 			};
 			name = Debug;
 		};
@@ -349,10 +445,13 @@
 			baseConfigurationReference = DF0D3358BB8F2EEBB0439249 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FirTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "--Nature--.FirTool";
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkweb.FirTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f872722a-a038-452f-8e7d-0b36236e8bd8";
 			};
 			name = Release;
 		};
