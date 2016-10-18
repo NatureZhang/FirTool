@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		44CE044449CB02445A88B70C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B4E0818FC89BF483D0937 /* libPods.a */; };
+		D938ED211D86550500AB8560 /* FirLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D938ED201D86550500AB8560 /* FirLog.m */; };
+		D938ED241D86552E00AB8560 /* SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D938ED231D86552E00AB8560 /* SystemInfo.m */; };
+		D938ED271D86557B00AB8560 /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = D938ED251D86557B00AB8560 /* IPAddress.c */; };
 		D94C97051D802BE500FEEB8F /* NetWorkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D94C97041D802BE500FEEB8F /* NetWorkTask.m */; };
 		D9540DFF1D81020A0022CA9C /* AppListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9540DFE1D81020A0022CA9C /* AppListVC.m */; };
 		D9540E061D8102440022CA9C /* AppListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9540E051D8102440022CA9C /* AppListModel.m */; };
@@ -25,6 +28,12 @@
 
 /* Begin PBXFileReference section */
 		D23059198B2E9172E283F20E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D938ED1F1D86550500AB8560 /* FirLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirLog.h; sourceTree = "<group>"; };
+		D938ED201D86550500AB8560 /* FirLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirLog.m; sourceTree = "<group>"; };
+		D938ED221D86552E00AB8560 /* SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfo.h; sourceTree = "<group>"; };
+		D938ED231D86552E00AB8560 /* SystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInfo.m; sourceTree = "<group>"; };
+		D938ED251D86557B00AB8560 /* IPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPAddress.c; sourceTree = "<group>"; };
+		D938ED261D86557B00AB8560 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
 		D94C97031D802BE500FEEB8F /* NetWorkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTask.h; sourceTree = "<group>"; };
 		D94C97041D802BE500FEEB8F /* NetWorkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTask.m; sourceTree = "<group>"; };
 		D9540DFD1D81020A0022CA9C /* AppListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListVC.h; sourceTree = "<group>"; };
@@ -117,6 +126,12 @@
 			children = (
 				D9540E0F1D8117380022CA9C /* NSDate+Convert.h */,
 				D9540E101D8117380022CA9C /* NSDate+Convert.m */,
+				D938ED1F1D86550500AB8560 /* FirLog.h */,
+				D938ED201D86550500AB8560 /* FirLog.m */,
+				D938ED251D86557B00AB8560 /* IPAddress.c */,
+				D938ED261D86557B00AB8560 /* IPAddress.h */,
+				D938ED221D86552E00AB8560 /* SystemInfo.h */,
+				D938ED231D86552E00AB8560 /* SystemInfo.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -218,7 +233,7 @@
 				TargetAttributes = {
 					F42EB9991D78858600766BA1 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = CUS5A53T99;
+						DevelopmentTeam = W93W23Y6UU;
 					};
 				};
 			};
@@ -309,13 +324,16 @@
 			files = (
 				F42EB9A51D78858600766BA1 /* ViewController.m in Sources */,
 				D9540E141D811B650022CA9C /* AppListCell.m in Sources */,
+				D938ED241D86552E00AB8560 /* SystemInfo.m in Sources */,
 				D9540E111D8117380022CA9C /* NSDate+Convert.m in Sources */,
 				D94C97051D802BE500FEEB8F /* NetWorkTask.m in Sources */,
 				F42EB9A21D78858600766BA1 /* AppDelegate.m in Sources */,
 				D9540E061D8102440022CA9C /* AppListModel.m in Sources */,
+				D938ED211D86550500AB8560 /* FirLog.m in Sources */,
 				D9540E0D1D810FB60022CA9C /* AppDetailVC.m in Sources */,
 				D9540DFF1D81020A0022CA9C /* AppListVC.m in Sources */,
 				F42EB99F1D78858600766BA1 /* main.m in Sources */,
+				D938ED271D86557B00AB8560 /* IPAddress.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +448,8 @@
 			baseConfigurationReference = D23059198B2E9172E283F20E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Talkweb Information System Co., Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Talkweb Information System Co., Ltd";
 				INFOPLIST_FILE = FirTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -445,7 +464,8 @@
 			baseConfigurationReference = DF0D3358BB8F2EEBB0439249 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Talkweb Information System Co., Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Talkweb Information System Co., Ltd";
 				INFOPLIST_FILE = FirTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -31,6 +31,8 @@
     }];
     
     
+    NSLog(@"%@", [[UIDevice currentDevice] systemVersion]);
+    
 }
 
 - (void)didReceiveMemoryWarning {

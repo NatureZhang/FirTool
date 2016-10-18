@@ -36,7 +36,7 @@
     
     self.bundleIdLabel.text = [NSString stringWithFormat:@"id: %@", appModel.bundleId];
     
-    self.timeLabel.text = [NSString stringWithFormat:@"time: %@", appModel.lastTime];
+    self.timeLabel.text = [NSString stringWithFormat:@"time: %@", appModel.lastTimeStr];
 }
 
 @end

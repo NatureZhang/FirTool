@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString *iconUrl;
 @property (nonatomic, strong) NSString *bundleId;
 @property (nonatomic, strong) NSString *lastTime;
+@property (nonatomic, strong) NSString *lastTimeStr;
 @property (nonatomic, strong) NSString *appVersion;
 @property (nonatomic, strong) NSString *distributionName;
 @end

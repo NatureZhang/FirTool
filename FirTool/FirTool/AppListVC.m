@@ -13,7 +13,7 @@
 #import "YYModel.h"
 #import "MJRefresh.h"
 #import "AppListModel.h"
-
+#import "MBProgressHUD.h"
 
 static NSString *cellId = @"appListCellId";
 @interface AppListVC ()<UITableViewDelegate, UITableViewDataSource>
@@ -43,13 +43,16 @@ static NSString *cellId = @"appListCellId";
     
     NetWorkTask *task = [NetWorkTask shareNetWorkTask];
     
-    NSDictionary *param = @{@"api_token":@"xxxxxxxx"};
+    NSDictionary *param = @{@"api_token":@"xxxxx"};
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [task netWorkGET:@"http://api.fir.im/apps" parameters:param progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         
         [self.contentTableView.mj_header endRefreshing];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         
+        self.appLists = [NSArray yy_modelArrayWithClass:[AppListModel class] json:[responseObject objectForKey:@"items"]];
+        [self sortAppList];
         
-        self.appLists = [NSArray yy_modelArrayWithClass:[AppListModel class] json:responseObject];
         if (self.appLists.count > 0) {
             [self.contentTableView reloadData];
         }
@@ -57,6 +60,17 @@ static NSString *cellId = @"appListCellId";
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
+}
+
+- (void)sortAppList {
+    
+    self.appLists = [_appLists sortedArrayUsingComparator:^NSComparisonResult(AppListModel* obj1, AppListModel* obj2) {
+        
+        NSComparisonResult result = [obj2.lastTime compare:obj1.lastTime];
+        
+        return result;
+    }];
+    
 }
 
 #pragma mark - 辅助函数
@@ -81,6 +95,7 @@ static NSString *cellId = @"appListCellId";
     
     self.contentTableView.delegate = self;
     self.contentTableView.dataSource = self;
+    self.contentTableView.backgroundColor = [UIColor clearColor];
     
     self.contentTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeader)];
 }
@@ -100,6 +115,7 @@ static NSString *cellId = @"appListCellId";
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
     return 92;
 }
 

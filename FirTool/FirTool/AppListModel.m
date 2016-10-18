@@ -36,7 +36,7 @@
     return [tmpMuArray componentsJoinedByString:@"."];
 }
 
-- (NSString *)lastTime {
+- (NSString *)lastTimeStr {
     return [NSDate nat_YMDHMWithTimeInterval:_lastTime];
 }
 
